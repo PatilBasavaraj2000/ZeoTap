@@ -183,22 +183,20 @@ This project implements a rule engine that determines user eligibility based on 
 - Evaluation of user attributes against eligibility rules
 - Support for error handling and attribute validation
 
-## Setup
-1. Clone the repository.
-2. Set up a Java environment with Spring Boot and MongoDB.
-3. Run the application.
-
-
 ## Testing
 - Use JUnit to run the provided test cases and verify the functionality of the rule engine.
 
-## License
-This project is licensed under the MIT License.
-```
-
+   
 ###Results
 
 Run: https://zeo-tap-9ca3.vercel.app
+
+
+## License
+This project is licensed under the MIT License.
+
+
+
 
 
 ![image](https://github.com/user-attachments/assets/7bc1d952-2921-4918-8792-2ead7005504e)
@@ -206,6 +204,8 @@ Run: https://zeo-tap-9ca3.vercel.app
 ![image](https://github.com/user-attachments/assets/1e55eae2-fea1-4782-b033-3d3f7cb05396)
 
 ![image](https://github.com/user-attachments/assets/7d8ff6bf-5aa7-4f3a-b0b5-96d94364dbce)
+
+```
 
 
 
