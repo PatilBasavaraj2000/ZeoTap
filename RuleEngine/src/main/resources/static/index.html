@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>User Eligibility Checker</title>
+</head>
+<body>
+<div class="container">
+  <h1>User Eligibility Checker</h1>
+  <form id="eligibilityForm">
+    <div class="form-group">
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <input type="number" id="age" placeholder="Enter your age" required>
+    </div>
+    <div class="form-group">
+      <select id="department" required>
+        <option value="" disabled selected>Select your department</option>
+        <option value="Sales">Sales</option>
+        <option value="Marketing">Marketing</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="number" id="income" placeholder="Enter your income" required>
+    </div>
+    <div class="form-group">
+      <input type="number" id="spending" placeholder="Enter your spending" required>
+    </div>
+    <button type="submit">Check Eligibility</button>
+    <button type="button" id="clearBtn">Clear</button>
+  </form>
+  <div id="result" class="result" style="display:none;"></div>
+</div>
+
+<!-- Modal for displaying rules -->
+<div id="rulesModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close" style="cursor:pointer;">&times;</span>
+    <h2>Eligibility Rules</h2>
+    <p>Sample Rules:</p>
+    <ul>
+      <li>Rule 1: <strong>((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (income > 50000 OR spending > 5)</strong></li>
+      <li>Rule 2: <strong>((age > 30 AND department = 'Marketing')) AND (income > 20000 OR spending > 5)</strong></li>
+    </ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
